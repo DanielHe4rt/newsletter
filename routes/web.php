@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MeController;
+use App\Http\Controllers\ViewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ViewController::class, 'viewLanding']);
+Route::get('/oauth/twitch', [AuthController::class, 'getAuthenticate']);
+Route::get('/dashboard', [ViewController::class, 'viewDashboard']);
+Route::get('/logout', [AuthController::class, 'getLogout']);
+
+Route::delete('/see-ya', [MeController::class, 'deleteMe'])->name('delete-user');

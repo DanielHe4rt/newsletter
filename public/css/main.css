@@ -1,0 +1,14 @@
+
+.hero-bg {
+    background-position: center;
+    min-height: 30em;
+}
+
+.hero-title {
+    padding-top: 5em;
+}
+
+.hero-lead {
+    padding-top: 3em;
+    margin-bottom: 2em;
+}
