@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>DH Newsletter</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
-<body>
+<body class="">
 @yield('navbar', View::make('template.navbar'))
 
 <div class="container">
     <div class="card border-light mb-3 mt-5 pb-1">
-        <div class="card-body" style="padding: 0;">
+        <div class="card-body">
             <div class="row">
                 <div class="col-12 col-md-6 text-center">
-                    <img class="img-fluid" width="300" src="{{ asset('images/emote-note.png') }}" style="transform: rotateX(360deg)">
+                    <img class="img-fluid border-dark" width="300" src="{{ asset('images/emote-note.png') }}" style="border: 2px solid black; border-radius: 2%">
                 </div>
                 <div class="col-12 col-md-6">
                     <h4 class="card-title mt-3 mb-4">Pronto!</h4>

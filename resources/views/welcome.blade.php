@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>DH Newsletter</title>
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
-<body>
+<body class="">
 @yield('navbar', View::make('template.navbar', ['twitchUrl' => $twitchUrl]))
 <div class="container-fluid hero-bg text-center" style="background: url('{{ asset('images/hero-bg.jpg') }}')">
-    <h3 class="hero-title">Newsletter do danielzin zika do baile</h3>
+    <h3 class="hero-title">DanielHe4rt Newsletter</h3>
     <p class="hero-lead">Fique por dentro das peripécias do menino coração recebendo e-mails exclusivos!</p>
     <a href="{{ $twitchUrl }}" class="btn btn-outline-primary">Clique aqui para se inscrever</a>
 </div>
@@ -25,8 +25,8 @@
                     <img class="img-fluid" width="300" src="{{ asset('images/emote-think.png') }}"
                          style="transform: rotateX(360deg)">
                 </div>
-                <div class="col-12 col-md-6">
-                    <h4 class="card-title mt-5 mb-4">Sobre</h4>
+                <div class="col-12 col-md-6 p-3">
+                    <h4 class="card-title mt-5 mb-4" style="padding-left: .3em;">Sobre</h4>
                     <p class="card-text mb-5 p-2">
                         Esse projeto em como principio coletar e-mails de pessoas que seguem o meu trabalho, sendo
                         na Twitch ou no Twitter, para que quando tiver algum tipo de aviso sobre o canal ou qualquer uma
@@ -34,7 +34,6 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

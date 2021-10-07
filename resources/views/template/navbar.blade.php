@@ -8,13 +8,13 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link " href="/">Home
+                    <a class="nav-link {{ (request()->is('/')) ? 'active' : '' }}" href="/">Home
                         <span class="visually-hidden">(current)</span>
                     </a>
                 </li>
                 @auth()
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dashboard">Dashboard
+                        <a class="nav-link {{ (request()->is('dashboard')) ? 'active' : '' }}" href="/dashboard">Dashboard
                         </a>
                     </li>
                 @endauth
