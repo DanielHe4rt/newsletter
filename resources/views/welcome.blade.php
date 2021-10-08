@@ -3,6 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <title>DanielHe4rt Newsletter</title>
+    <meta name="title" content="DanielHe4rt Newsletter">
+    <meta name="description" content="Assine minha lista para saber com antecedência dos meus projetos, posts, videos, lives especiais e muito mais!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://newsletter.danielheart.dev">
+    <meta property="og:title" content="DanielHe4rt Newsletter">
+    <meta property="og:description" content="Assine minha lista para saber com antecedência dos meus projetos, posts, videos, lives especiais e muito mais!">
+    <meta property="og:image" content="{{ asset('images/nsei.png') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://newsletter.danielheart.dev">
+    <meta property="twitter:title" content="DanielHe4rt Newsletter">
+    <meta property="twitter:description" content="Assine minha lista para saber com antecedência dos meus projetos, posts, videos, lives especiais e muito mais!">
+    <meta property="twitter:image" content="{{ asset('images/nsei.png') }}">
+
 
     <title>DH Newsletter</title>
 
